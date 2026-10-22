@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платформер — Canvas JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="960" height="540"></canvas>
+        <div id="hud">
+            <div id="score">Очки: 0</div>
+            <div id="lives">Жизни: 3</div>
+            <div id="level">Уровень: 1</div>
+        </div>
+        <div id="overlay" class="overlay">
+            <h1>Платформер</h1>
+            <p>A/D или ← → — движение, Space/W/↑ — прыжок</p>
+            <button id="start-btn">Начать игру</button>
+        </div>
+        <div id="controls">
+            <button id="pause-btn">Пауза</button>
+            <button id="restart-btn">Рестарт</button>
+        </div>
+    </div>
+    <script src="js/InputHandler.js"></script>
+    <script src="js/Collision.js"></script>
+    <script src="js/Platform.js"></script>
+    <script src="js/Coin.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Renderer.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
